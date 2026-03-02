@@ -288,6 +288,16 @@ li {
   color: var(--text);
 }
 
+/* ---- 404 ---- */
+.not-found {
+  margin-top: 4rem;
+}
+
+.not-found p {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 600px) {
   html {
