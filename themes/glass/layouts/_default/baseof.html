@@ -11,6 +11,9 @@
 <body>
   <header class="site-header">
     <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "about/" | relURL }}">about</a>
+    </nav>
   </header>
   <main>
     {{ block "main" . }}{{ end }}

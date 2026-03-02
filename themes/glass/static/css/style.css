@@ -119,6 +119,20 @@ li {
 /* ---- Header ---- */
 .site-header {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-nav a {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  border-bottom: none;
+  letter-spacing: 0.03em;
+}
+
+.site-nav a:hover {
+  color: var(--text);
 }
 
 .site-title {
