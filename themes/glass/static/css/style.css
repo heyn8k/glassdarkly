@@ -56,10 +56,19 @@ a {
   color: var(--text-bright);
   text-decoration: none;
   border-bottom: 1px solid var(--rule);
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, color 0.2s;
 }
 
 a:hover {
+  border-color: var(--accent);
+}
+
+.post-content a {
+  color: #e8e8e8;
+  border-bottom: 1px solid #444;
+}
+
+.post-content a:hover {
   border-color: var(--accent);
 }
 
@@ -216,6 +225,18 @@ li {
   font-size: 0.75rem;
   color: var(--text-dim);
   font-family: var(--mono);
+}
+
+.footer-link {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  border-bottom: none;
+  letter-spacing: 0.03em;
+}
+
+.footer-link:hover {
+  color: var(--text);
 }
 
 /* ---- Responsive ---- */
