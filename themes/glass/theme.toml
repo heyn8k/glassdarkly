@@ -1,0 +1,6 @@
+name = 'Glass'
+license = 'MIT'
+description = 'A minimal, dark theme for glassdarkly.dev'
+
+[author]
+  name = 'N8K'

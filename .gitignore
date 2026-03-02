@@ -1,0 +1,9 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# OS files
+.DS_Store
+
+# Hugo dev server
+hugo_stats.json

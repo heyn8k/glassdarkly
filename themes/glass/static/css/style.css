@@ -1,0 +1,215 @@
+/* ---- Reset ---- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Base ---- */
+:root {
+  --bg: #111;
+  --text: #ccc;
+  --text-dim: #777;
+  --text-bright: #e0e0e0;
+  --accent: #999;
+  --rule: #222;
+  --serif: Georgia, "Times New Roman", serif;
+  --mono: "SF Mono", Menlo, monospace;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3 {
+  color: var(--text-bright);
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+}
+
+a {
+  color: var(--text-bright);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-color: var(--accent);
+}
+
+blockquote {
+  border-left: 2px solid var(--rule);
+  padding-left: 1.2rem;
+  color: var(--text-dim);
+  margin: 1.8rem 0;
+  font-style: italic;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  background: #1a1a1a;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  background: #1a1a1a;
+  padding: 1.2rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.8rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+ul, ol {
+  margin-bottom: 1.4rem;
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* ---- Header ---- */
+.site-header {
+  margin-bottom: 3rem;
+}
+
+.site-title {
+  font-size: 1rem;
+  color: var(--text-dim);
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: var(--text);
+}
+
+/* ---- Home ---- */
+.site-description {
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+/* ---- Post list ---- */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-summary time {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+
+.post-summary h2 {
+  margin-top: 0.2rem;
+}
+
+.post-summary h2 a {
+  border-bottom: none;
+}
+
+.post-summary h2 a:hover {
+  color: var(--text);
+}
+
+.subtitle {
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+/* ---- Single post ---- */
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header time {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+
+.post-header h1 {
+  margin-top: 0.4rem;
+}
+
+.post-content {
+  margin-bottom: 3rem;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.site-footer p {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 2rem 1rem;
+  }
+}
