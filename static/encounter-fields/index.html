@@ -6,6 +6,22 @@
     <title>Encounter Fields</title>
     <script src="p5.min.js"></script>
     <style>
+        @font-face {
+            font-family: 'iA Writer Quattro';
+            src: url('../fonts/iAWriterQuattroS-Regular.woff2') format('woff2');
+            font-weight: 400; font-style: normal; font-display: swap;
+        }
+        @font-face {
+            font-family: 'iA Writer Quattro';
+            src: url('../fonts/iAWriterQuattroS-Bold.woff2') format('woff2');
+            font-weight: 700; font-style: normal; font-display: swap;
+        }
+        @font-face {
+            font-family: 'IBM Plex Mono';
+            src: url('../fonts/IBMPlexMono-Regular.woff2') format('woff2');
+            font-weight: 400; font-style: normal; font-display: swap;
+        }
+
         :root {
             --anthropic-dark: #141413;
             --anthropic-light: #faf9f5;
@@ -19,7 +35,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: 'IBM Plex Mono', monospace;
             background: linear-gradient(135deg, var(--anthropic-light) 0%, #f5f3ee 100%);
             min-height: 100vh;
             color: var(--anthropic-dark);
@@ -45,7 +61,7 @@
         }
 
         .sidebar h1 {
-            font-family: Georgia, serif;
+            font-family: 'iA Writer Quattro', Georgia, serif;
             font-size: 24px;
             font-weight: 500;
             color: var(--anthropic-dark);
@@ -166,7 +182,7 @@
             border: 1px solid var(--anthropic-light-gray);
             border-radius: 8px;
             background: white;
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: 'IBM Plex Mono', monospace;
             font-size: 13px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -200,7 +216,7 @@
         #canvas-container canvas { display: block; }
 
         .loading {
-            font-family: Georgia, serif;
+            font-family: 'iA Writer Quattro', Georgia, serif;
             font-size: 18px;
             color: var(--anthropic-mid-gray);
             padding: 40px;
