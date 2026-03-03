@@ -58,7 +58,7 @@
 :root {
   --bg: #111;
   --text: #ccc;
-  --text-dim: #777;
+  --text-dim: #999;
   --text-bright: #e0e0e0;
   --accent: #999;
   --rule: #222;
@@ -80,6 +80,7 @@ body {
   padding: 3rem 1.5rem;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /* ---- Typography ---- */
 h1, h2, h3 {
