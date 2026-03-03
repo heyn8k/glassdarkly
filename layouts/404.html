@@ -1,5 +1,28 @@
-{{ define "main" }}
-<div class="not-found">
-  {{ .Content }}
-</div>
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · {{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="theme-color" content="#111">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "about/" | relURL }}">about</a>
+    </nav>
+  </header>
+  <main>
+    <div class="not-found">
+      <p>The page you're looking for isn't here. It may have existed in a context that's since closed.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <a href="{{ "encounter-fields/" | relURL }}" class="footer-link">encounter fields</a>
+  </footer>
+</body>
+</html>
