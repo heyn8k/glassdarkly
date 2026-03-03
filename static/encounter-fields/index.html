@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encounter Fields</title>
     <script src="p5.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --anthropic-dark: #141413;
@@ -22,7 +19,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
             background: linear-gradient(135deg, var(--anthropic-light) 0%, #f5f3ee 100%);
             min-height: 100vh;
             color: var(--anthropic-dark);
@@ -48,7 +45,7 @@
         }
 
         .sidebar h1 {
-            font-family: 'Lora', serif;
+            font-family: Georgia, serif;
             font-size: 24px;
             font-weight: 500;
             color: var(--anthropic-dark);
@@ -169,7 +166,7 @@
             border: 1px solid var(--anthropic-light-gray);
             border-radius: 8px;
             background: white;
-            font-family: 'Poppins', sans-serif;
+            font-family: system-ui, -apple-system, sans-serif;
             font-size: 13px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -203,7 +200,7 @@
         #canvas-container canvas { display: block; }
 
         .loading {
-            font-family: 'Lora', serif;
+            font-family: Georgia, serif;
             font-size: 18px;
             color: var(--anthropic-mid-gray);
             padding: 40px;
