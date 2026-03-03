@@ -7,3 +7,6 @@ resources/_gen/
 
 # Hugo dev server
 hugo_stats.json
+
+# Local drafts (not deployed)
+drafts/
