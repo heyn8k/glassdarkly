@@ -269,6 +269,9 @@ li {
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .site-footer p {
